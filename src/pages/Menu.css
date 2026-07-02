@@ -1,0 +1,44 @@
+/* ===========================================
+   MENU PAGE STYLES
+=========================================== */
+
+.menu-page {
+  padding: 60px 0 80px;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  background-color: var(--bg-card);
+  color: var(--text-muted);
+  border: 1px solid var(--border-soft);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: var(--text-white);
+  border-color: var(--accent-orange);
+}
+
+.filter-btn.active {
+  background-color: var(--accent-orange);
+  color: #121212;
+  border-color: var(--accent-orange);
+  font-weight: 600;
+}
+
+.menu-page .food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}

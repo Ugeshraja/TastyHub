@@ -1,0 +1,104 @@
+/* ===========================================
+   HOME PAGE STYLES
+=========================================== */
+
+.hero {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  animation: fadeIn 0.6s ease both;
+}
+
+.hero-eyebrow {
+  color: var(--accent-orange);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin: 10px 0 18px;
+}
+
+.hero-text p {
+  color: var(--text-muted);
+  max-width: 480px;
+  margin-bottom: 28px;
+}
+
+.hero-btn {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 0.8s ease both;
+}
+
+.hero-image img {
+  max-width: 420px;
+  width: 100%;
+}
+
+/* ===== Featured Section ===== */
+.featured {
+  padding: 70px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.section-heading p {
+  color: var(--text-muted);
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.featured-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 800px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+}
